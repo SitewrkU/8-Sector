@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false;">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Lobster&family=Pacifico&display=swap" rel="stylesheet">
+
+    <title>Writing</title>
+</head>
+<body>
+    <script type="text/javascript" >
+        window.onkeydown = function(evt) {
+            if(evt.keyCode == 123) return false;
+        };
+    
+        window.onkeypress = function(evt) {
+            if(evt.keyCode == 123) return false;
+        };
+    </script> 
+
+    <div class="header">
+        <h1 style="margin-left: 10px; margin-right: 20px; border-bottom: 6px solid rgb(0, 0, 0); font-size: 25px;">
+            <svg class="SVG1" fill="#000000" width="25px" height="25px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm8 0h2v12H4V2h4v5h2V2z"/></svg>
+            Поеми
+        </h1>
+        <button class="Rand-Button" onclick="randomRedirect()">
+            <svg class="SVG2" width="40px" height="40px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+                <g fill="#000000">
+                <path d="M5 4a1 1 0 000 2h.01a1 1 0 000-2H5zM7 8a1 1 0 011-1h.01a1 1 0 010 2H8a1 1 0 01-1-1zM11.01 10a1 1 0 100 2h.01a1 1 0 100-2h-.01z"/>
+                <path fill-rule="evenodd" d="M3.25 1A2.25 2.25 0 001 3.25v9.5A2.25 2.25 0 003.25 15h9.5A2.25 2.25 0 0015 12.75v-9.5A2.25 2.25 0 0012.75 1h-9.5zM2.5 3.25a.75.75 0 01.75-.75h9.5a.75.75 0 01.75.75v9.5a.75.75 0 01-.75.75h-9.5a.75.75 0 01-.75-.75v-9.5z" clip-rule="evenodd"/>
+                </g>
+            </svg>
+        </button>
+
+
+        <a class="last-element" href="https://www.tiktok.com/@lin4.li1i?lang=uk-UA">
+            <img style="height: 50px; width: 50px;" src="https://www.svgrepo.com/show/333611/tiktok.svg" alt="TikTok of PoemMaker">
+        </a>
+    </div>
+    <div class="peredtext" style="margin-right: auto; margin-left: auto;">
+        <h3>Запрошуємо вас зануритися у світ поезії, де кожне слово — це маленький світ, що чекає на вас з відкритими обіймами. Приємного читання!</h3>
+    </div>
+
+    <div class="content">
+    <div class="container">
+        <h1>Список поем</h1>
+        <div class="overfl">
+        <ul id="works-list">
+            <li><a href="Stasi/index.html">1. Щоденник стасі</a></li>
+            <li><a href="MyLitleLilibet/index.html">2. Моя маленька Лілібет</a></li>
+            <li><a href="8Sector/index.html">3. 8 Сектор</a></li>
+            <li><a href="Circus/index.html">4. Цирк трьох красунь</a></li>
+        </ul>
+        </div>
+    </div>
+
+    
+    </div>
+
+    
+    <div class="l-words">     
+        <p style="color: rgb(0, 0, 0); margin-left: 8px;">
+            <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                <g transform="translate(0 -1028.4)">
+                <path d="m7 1031.4c-1.5355 0-3.0784 0.5-4.25 1.7-2.3431 2.4-2.2788 6.1 0 8.5l9.25 9.8 9.25-9.8c2.279-2.4 2.343-6.1 0-8.5-2.343-2.3-6.157-2.3-8.5 0l-0.75 0.8-0.75-0.8c-1.172-1.2-2.7145-1.7-4.25-1.7z" fill="#e74c3c"/>
+                </g>
+            </svg>
+            Надіємося, що кожен рядок став для вас джерелом натхнення та задуму. Чекаємо на ваші повернення до наших сторінок, де завжди буде місце для нових відкриттів та спогадів!
+            
+        </p>
+    
+    </div>
+
+    <script>
+        function randomRedirect() {
+            const links = document.querySelectorAll('#works-list a');
+            const randomIndex = Math.floor(Math.random() * links.length);
+            const randomLink = links[randomIndex].href;
+            window.location.href = randomLink;
+        }
+    </script>
+</body>
+</html>
+
+
