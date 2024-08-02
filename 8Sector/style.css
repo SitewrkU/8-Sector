@@ -1,19 +1,10 @@
-body {
+body{
     font-family: "Ubuntu Sans Mono", monospace;
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
-    background-image: url('https://images.pexels.com/photos/262713/pexels-photo-262713.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size:cover;
+    background-color: rgb(70, 70, 70);
     margin: 0;
-}
-button {
-    -webkit-touch-callout: none; 
-    -webkit-user-select: none;  
-    user-select: none;
-    -webkit-tap-highlight-color: transparent; 
 }
 *{
     -moz-user-select: none;
@@ -21,6 +12,30 @@ button {
     -webkit-user-select:none;
     user-select: none;
 }
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 0;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #3535355b;
+}
+button {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;  
+    user-select: none;
+    -webkit-tap-highlight-color: transparent; 
+}
+a {
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    user-select: none;
+    -webkit-tap-highlight-color: transparent; 
+}
+
 @media only screen and (max-width: 600px) {
     .pre-story {
       font-size: 18px;
@@ -50,15 +65,16 @@ button {
     left: 0;
     width: 100%;
     height: 60px;
-    background-color: rgba(170, 170, 170, 0.747);
+    background-color: rgba(56, 56, 56, 0.747);
     display: flex;
     justify-content: left; 
     align-items: center;
     margin: 0;
 }
 
+
 .top-btn{
-    background-color: rgb(255, 224, 51);
+    background-color: rgb(100, 100, 100);
     margin-right: 10px;
     border: none;
     border-radius: 5px;
@@ -68,7 +84,7 @@ button {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 .top-btn:hover {
-    background-color: rgb(255, 179, 37);
+    background-color: rgb(80, 80, 80);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
@@ -78,7 +94,7 @@ button {
 
 .top-btn:active {
     transform: scale(0.95);
-    background-color: rgb(255, 166, 0);
+    background-color: rgb(65, 65, 65);
 }
 
 
